@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px;
+  }
+}
+
+img {
+  width: 100%;
+}
