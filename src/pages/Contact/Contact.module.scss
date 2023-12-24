@@ -1,0 +1,14 @@
+.contact {
+    h1 {
+        margin-bottom: 5rem;
+    }
+    .contact__content {
+        display: flex;
+        .contact__howToOrder {
+            width: 50%;
+        }
+        .contact__socials {
+            width: 50%;
+        }
+    }
+}

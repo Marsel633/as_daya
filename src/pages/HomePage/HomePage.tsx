@@ -1,9 +1,12 @@
+import { Layout } from "../../components";
 
 
 export const HomePage = () => {
   return (
-    <div className="container">
-      HomePage
-    </div>
+    <Layout>
+      <div className="container">
+        HomePage
+      </div>
+    </Layout>
   );
 };

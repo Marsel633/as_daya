@@ -1,0 +1,54 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1.5rem;
+      transition: 0.4s all;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: transparent;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+      }
+
+      &:before {
+        top: 0;
+        transform-origin: right;
+      }
+
+      &:after {
+        bottom: 0;
+        transform-origin: left;
+      }
+
+      &:hover {
+        color: #644dce;
+        svg {
+          fill: #644dce;
+        }
+        &:before,
+        &:after {
+          transform: scaleX(1);
+          background-color: #644dce;
+        }
+      }
+    }
+  }
+}
