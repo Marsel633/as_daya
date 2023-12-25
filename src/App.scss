@@ -42,3 +42,14 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

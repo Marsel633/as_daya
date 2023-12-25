@@ -1,8 +1,11 @@
 .header {
   height: 100px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #644dce;
+  border-radius: 50%;
   .nav {
     width: 50%;
     height: 100%;
