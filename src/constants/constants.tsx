@@ -1,18 +1,18 @@
-import hm from "../assets/logo-images/h-m.svg";
-import zara from "../assets/logo-images/zara.svg";
-import newBalance from "../assets/logo-images/new-balance.svg";
-import gap from "../assets/logo-images/gap.svg";
-import oldNavy from "../assets/logo-images/old-navy.svg";
-import puma from "../assets/logo-images/puma-logo.svg";
-import lacoste from "../assets/logo-images/lacoste-logo.svg";
-import nike from "../assets/logo-images/nike-8.svg";
-import michaelKors from "../assets/logo-images/michael-kors.svg";
-import victoriasSecret from "../assets/logo-images/victorias-secret.svg";
-import crocs from "../assets/logo-images/logo-crocs.svg";
-import theChPlace from "../assets/logo-images/the-childrens-place.svg";
-import tommyHelfiger from "../assets/logo-images/tommy-hilfiger-2.svg";
-import geox from "../assets/logo-images/geox-1.svg";
-import usPolo from "../assets/logo-images/uspa-usa.png";
+// import hm from "../assets/logo-images/h-m.svg";
+// import zara from "../assets/logo-images/zara.svg";
+// import newBalance from "../assets/logo-images/new-balance.svg";
+// import gap from "../assets/logo-images/gap.svg";
+// import oldNavy from "../assets/logo-images/old-navy.svg";
+// import puma from "../assets/logo-images/puma-logo.svg";
+// import lacoste from "../assets/logo-images/lacoste-logo.svg";
+// import nike from "../assets/logo-images/nike-8.svg";
+// import michaelKors from "../assets/logo-images/michael-kors.svg";
+// import victoriasSecret from "../assets/logo-images/victorias-secret.svg";
+// import crocs from "../assets/logo-images/logo-crocs.svg";
+// import theChPlace from "../assets/logo-images/the-childrens-place.svg";
+// import tommyHelfiger from "../assets/logo-images/tommy-hilfiger-2.svg";
+// import geox from "../assets/logo-images/geox-1.svg";
+// import usPolo from "../assets/logo-images/uspa-usa.png";
 
 type HowToOrder = {
   title: string;
@@ -25,10 +25,9 @@ type Categories = {
   icon: React.ReactNode;
 };
 
-type Brands = {
+export type Brands = {
   title: string;
   url: string;
-  logo: React.ReactNode;
 };
 
 export const aboutMeArray: string[] = [
@@ -120,7 +119,7 @@ export const categories: Categories[] = [
   },
   {
     id: 5,
-    title: "South Korea",
+    title: "Korea",
     icon: <span style={{ fontSize: "3.2rem" }}>🇰🇷</span>,
   },
   {
@@ -132,219 +131,418 @@ export const categories: Categories[] = [
 
 export const UsaArray: Brands[] = [
   {
+    title: "Levi's",
+    url: "https://www.levi.com/US/en_US/",
+  },
+  {
+    title: "The North Face",
+    url: "https://www.thenorthface.com/en-us",
+  },
+  {
+    title: "Mango",
+    url: "https://shop.mango.com/us/women",
+  },
+  {
+    title: "Under Armor",
+    url: "https://www.underarmour.com/en-us/",
+  },
+  {
+    title: "Nordstrom Rack",
+    url: "https://www.nordstromrack.com/",
+  },
+  {
+    title: "Armani",
+    url: "https://www.armani.com/en-us",
+  },
+  {
+    title: "Carter's",
+    url: "https://www.carters.com/",
+  },
+  {
+    title: "Columbia",
+    url: "https://www.columbia.com/",
+  },
+  {
+    title: "Guess",
+    url: "https://www.guess.com/us/en/home/",
+  },
+  {
+    title: "Ralph Lauren",
+    url: "https://www.ralphlauren.com/?_gl=1*1codiib*_ga*NDg2MjkwODkzLjE3MDM1MDkyMzU.*_ga_JWJC3HP9M9*MTcwMzUwOTIzNC4xLjEuMTcwMzUwOTI1MC40Ni4wLjA.",
+  },
+  {
     title: "H&M",
     url: "https://www2.hm.com/en_us/index.html",
-    logo: <img src={hm} alt="H&M" />,
+  },
+  {
+    title: "Calvin Klein",
+    url: "https://www.calvinklein.us/en",
   },
   {
     title: "Zara",
     url: "https://www.zara.com/tr/en/woman-beachwear-l1052.html?v1=2253149",
-    logo: <img src={zara} alt="zara" />,
   },
   {
     title: "NewBalance",
     url: "https://www.newbalance.com/",
-    logo: <img src={newBalance} alt="newBalance" />,
   },
   {
     title: "Gap",
     url: "https://www.gap.com/",
-    logo: <img src={gap} alt="gap" />,
   },
   {
     title: "Old Navy",
     url: "https://oldnavy.gap.com/",
-    logo: <img src={oldNavy} alt="oldNavy" />,
   },
   {
     title: "Puma",
-    url: "https://in.puma.com/in/en?gclid=Cj0KCQjwu-KiBhCsARIsAPztUF3YoPaXDH51Mzc6eAPESStoGxbWI8TS4Y30chlp32PWgOJ1e4lon2waAmOTEALw_wcB",
-    logo: <img src={puma} alt="puma" />,
+    url: "https://us.puma.com/us/en",
   },
   {
     title: "Lacoste",
     url: "https://www.lacoste.com/gb/",
-    logo: <img src={lacoste} alt="lacoste" />,
   },
   {
     title: "Nike",
-    url: "https://www.nike.com/ie/?gclid=Cj0KCQjwu-KiBhCsARIsAPztUF2rvHIpGGptcAuF_0Iypuzb9Whtlbzcx59y8LHeYuuRvWg5wFIlUa8aAnViEALw_wcB",
-    logo: <img src={nike} alt="nike" />,
+    url: "https://www.nike.com/",
   },
   {
     title: "Michael Kors",
     url: "https://www.michaelkors.com/",
-    logo: <img src={michaelKors} alt="michaelKors" />,
   },
   {
     title: "Victoria's Secret",
     url: "https://www.victoriassecret.com/us/",
-    logo: <img src={victoriasSecret} alt="victoriasSecret" />,
   },
   {
     title: "Crocs",
     url: "https://www.crocs.com/",
-    logo: <img src={crocs} alt="crocs" />,
   },
   {
     title: "The Children's Place",
     url: "https://www.childrensplace.com/us/home",
-    logo: <img src={theChPlace} alt="theChPlace" />,
   },
   {
     title: "US Polo Association",
     url: "https://www.uspolo.org/",
-    logo: <img src={usPolo} alt="usPolo" />,
   },
   {
     title: "Geox",
     url: "https://www.geox.com/int/",
-    logo: <img src={geox} alt="geox" />,
   },
   {
     title: "Tommy Helfiger",
     url: "https://usa.tommy.com/en",
-    logo: <img src={tommyHelfiger} alt="tommyHelfiger" />,
   },
 ];
-
 export const EuropeArray: Brands[] = [
   {
-    title: "",
-    url: "",
-    logo: "",
+    title: "LuisaViaRoma",
+    url: "https://www.luisaviaroma.com",
+  },
+  {
+    title: "Farfetch",
+    url: "https://www.farfetch.com",
+  },
+  {
+    title: "Net-A-Porter",
+    url: "https://www.net-a-porter.com",
+  },
+  {
+    title: "Zalando",
+    url: " https://www.zalando.it",
+  },
+  {
+    title: "OVS",
+    url: "https://www.ovs.it",
+  },
+  {
+    title: "Calzedonia",
+    url: "https://www.calzedonia.com",
+  },
+  {
+    title: "KIKO Milano",
+    url: "https://www.kikocosmetics.com",
+  },
+  {
+    title: "Coin",
+    url: " https://www.coin.it",
+  },
+  {
+    title: "Golden Goose",
+    url: "https://www.goldengoosedeluxebrand.com",
+  },
+  {
+    title: "SSENSE",
+    url: "https://www.ssense.com",
+  },
+  {
+    title: "Forzieri",
+    url: "https://www.forzieri.com",
+  },
+  {
+    title: "Max Mara",
+    url: "https://it.maxmara.com",
+  },
+  {
+    title: "Intimissimi",
+    url: "https://www.intimissimi.com",
+  },
+  {
+    title: "Prada",
+    url: "https://www.prada.com",
+  },
+  {
+    title: "Versace",
+    url: "https://www.versace.com",
+  },
+  {
+    title: "Bershka",
+    url: "https://www.bershka.com",
+  },
+  {
+    title: "Benetton",
+    url: "https://www.benetton.com",
+  },
+  {
+    title: "Motivi",
+    url: "https://www.motivi.com",
+  },
+  {
+    title: "Terranova",
+    url: "https://www.terranovastyle.com",
+  },
+  {
+    title: "Sephora Italy",
+    url: "https://www.sephora.it",
+  },
+  {
+    title: "H&M Italy",
+    url: "https://www2.hm.com/it_it",
+  },
+  {
+    title: "ASOS Italy",
+    url: " https://www.asos.com/it/",
+  },
+  {
+    title: "PINKO",
+    url: "https://www.pinko.com/it",
+  },
+  {
+    title: "Gucci",
+    url: "https://www.gucci.com/it/",
+  },
+  {
+    title: "Bata Italy",
+    url: " https://www.bata.it",
+  },
+  {
+    title: "Diesel Italy",
+    url: "https://www.diesel.com/it/",
+  },
+  {
+    title: "Missoni",
+    url: "https://www.missoni.com/it",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
+  {
+    title: "",
+    url: "",
+  },
+
 ];
 export const ChinaArray: Brands[] = [
   {
     title: "TaoBao",
     url: "https://world.taobao.com/",
-    logo: "./logo-images/taobao-logo.svg",
   },
   {
     title: "Alibaba",
     url: "https://m.1688.com/?src=desktop",
-    logo: "./logo-images/alibaba-com-2.svg",
   },
   {
     title: "PingDuoDuo",
     url: "https://m.pinduoduo.com/home/3c.html",
-    logo: "./logo-images/pinduoduo.svg",
   },
 ];
 export const KoreaArray: Brands[] = [
   {
     title: "",
     url: "",
-    logo: "",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
   {
     title: "",
     url: "",
-    logo: "",
   },
 ];
 export const JapanArray: Brands[] = [
   {
     title: "Uniqlo",
-    url: "https://www.uniqlo.com/us/en/",
-    logo: "./logo-images/uniqlo-1.svg",
+    url: "https://www.uniqlo.com/jp/ja/",
   },
   {
     title: "Asics",
     url: "https://www.asics.com/jp/ja-jp/",
-    logo: "./logo-images/asics-6.svg",
   },
   {
     title: "Onitsuka Tiger",
     url: "https://www.onitsukatiger.com/jp/ja-jp",
-    logo: "./logo-images/onitsuka-tiger-1.svg",
   },
   {
     title: "GU",
     url: "https://www.gu-global.com/jp/ja/",
-    logo: "./logo-images/gu-logo-1.svg",
   },
   {
     title: "Ingni",
     url: "https://www.ingni-store.com/smart/",
-    logo: "./logo-images/ing.svg",
   },
   {
     title: "Mizuno",
     url: "https://jpn.mizuno.com/",
-    logo: "./logo-images/mizuno.svg",
+  },
+  {
+    title: "Zozo",
+    url: "https://zozo.jp/",
+  },
+  {
+    title: "Kapital",
+    url: "https://www.kapital-webshop.jp/",
+  },
+  {
+    title: "Celice",
+    url: "https://www.celice.co.jp/",
+  },
+  {
+    title: "Motaro Jeans",
+    url: "https://momotarojeans-store.com/",
+  },
+  {
+    title: "ABC Mart",
+    url: "https://www.abc-mart.net/shop/",
+  },
+  {
+    title: "Newercap",
+    url: "https://www.neweracap.jp/",
+  },
+  {
+    title: "Zoff",
+    url: "https://www.zoff.co.jp/shop/default/.aspx",
+  },
+  {
+    title: "Nike",
+    url: "https://www.nike.com/jp/",
+  },
+  {
+    title: "Desente",
+    url: "https://www.descente-onlineshop.jp/dct/index.html",
   },
 ];
 export const TurkeyArray: Brands[] = [
   {
     title: "H&M Turkey",
     url: "https://www2.hm.com/tr_tr/index.html",
-    logo: "./logo-images/h-m.svg",
   },
   {
     title: "Zara Turkey",
     url: "https://www.zara.com/tr/",
-    logo: "./logo-images/zara.svg",
   },
   {
     title: "Puma Turkey",
     url: "https://tr.puma.com/?utm_source=GGL_PMAX&utm_medium=PMAX&utm_campaign=PMax_Generic_GGL_PMAX_GENERIC%7CTR_TR&utm_medium=PMAX&utm_source=GGL_PMAX&utm_campaign=PMax_Generic_GGL_PMAX_GENERIC%7CTR_TR&gbraid=0AAAAAC8EoW-pp22NlAL6HzdLEEYSuI2oG&gclid=CjwKCAjw3ueiBhBmEiwA4BhspJBxfYVJWQgwZIrIvdk0VrTqgeO4alvP4vR2Rl_Fj8FLJ-lCL1jAohoCRdkQAvD_BwE",
-    logo: "./logo-images/puma-logo.svg",
   },
   {
     title: "Polo Turkey",
     url: "https://tr.uspoloassn.com/",
-    logo: "./logo-images/uspa.png",
   },
   {
     title: "Bershka",
     url: "https://www.bershka.com/tr/",
-    logo: "./logo-images/bershka-1.svg",
+  },
+  {
+    title: "Viadellerose",
+    url: "https://www.viadellerose.com/",
+  },
+  {
+    title: "Instreet",
+    url: "https://www.instreet.com.tr/",
+  },
+  {
+    title: "Babymall",
+    url: "https://www.babymall.com.tr/",
+  },
+  {
+    title: "Desa",
+    url: "https://www.desa.com.tr/",
+  },
+  {
+    title: "Gant",
+    url: "https://www.gant.com.tr/",
+  },
+  {
+    title: "Derimod",
+    url: "https://derimod.com.tr/",
+  },
+  {
+    title: "Journey",
+    url: "https://www.journey.com.tr/",
+  },
+  {
+    title: "Mango Turkey",
+    url: "https://shop.mango.com/tr/kadin",
   },
   {
     title: "Stradivaius",
     url: "https://www.stradivarius.com/tr/",
-    logo: "./logo-images/stradivarius-1.svg",
   },
   {
     title: "Massimo Dutti",
     url: "https://www.massimodutti.com/tr/",
-    logo: "./logo-images/massimo-dutti-1.svg",
   },
   {
     title: "Ecco",
     url: "https://tr.ecco.com/",
-    logo: "./logo-images/ecco-2.svg",
+  },
+  {
+    title: "Kemal Tanca",
+    url: "https://www.kemaltancaonline.com/en",
   },
   {
     title: "Trendyol",
     url: "https://www.trendyol.com/en/select-country",
-    logo: "./logo-images/trendyol-stayhome.svg",
+  },
+  {
+    title: "Oysho",
+    url: "https://www.oysho.com/tr/",
+  },
+  {
+    title: "BMD",
+    url: "https://www.bikinimayokinidunyasi.com/",
+  },
+  {
+    title: "Madamecoco",
+    url: "https://www.madamecoco.com/",
+  },
+  {
+    title: "Tergan",
+    url: "https://www.tergan.com.tr/",
   },
 ];

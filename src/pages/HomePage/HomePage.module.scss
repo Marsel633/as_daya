@@ -4,9 +4,12 @@
         .logo {
             width: 50px;
             height: 50px;
-            border-radius: 50%;
+            border-radius: 100px;
         }
         .sidebar {
+            position: absolute;
+            left: 20px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             transition: .5s all;
@@ -21,7 +24,7 @@
             }
             .categoriesBtn {
                 height: 60px;
-                width: 90%;
+                width: 100%;
                 margin: 5px 0;
                 display: flex;
                 justify-content: start;
@@ -36,6 +39,7 @@
                 border-radius: 5px;
                 &:focus {
                     background-color: #644dce;
+                    color: #fff;
                 }
             }
             .toggleBtn {
@@ -48,14 +52,14 @@
         }
         .home__content {
             margin-top: 3rem;
-            width: 100%;
+            transition: .4s all;
         }
     }
 }
 .activeMenu {
-    width: 27%;
+    width: 180px;
   }
 
   .inactiveMenu {
-    width: 8%;
+    width: calc(3.2rem + 30px);
   }

@@ -1,7 +1,15 @@
-import { China, Europe, Japan, Korea, Layout, Turkey, Usa } from "../../components";
+import { Card, Layout } from "../../components";
 import styles from "./HomePage.module.scss";
 import { useState } from "react";
-import { categories } from "../../constants";
+import {
+  ChinaArray,
+  EuropeArray,
+  JapanArray,
+  KoreaArray,
+  TurkeyArray,
+  UsaArray,
+  categories,
+} from "../../constants";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export const HomePage = () => {
@@ -12,29 +20,36 @@ export const HomePage = () => {
   };
 
   const sidebarWidth = openSidebar ? "activeMenu" : "inactiveMenu";
-
+  console.log(UsaArray);
   return (
     <Layout>
       <section className={styles.home}>
         <div className={`${styles.home__wrapper} container`}>
           <aside className={`${styles.sidebar} ${styles[sidebarWidth]}`}>
-          <button className={styles.toggleBtn} onClick={toggleSidebar}>
-          <RxHamburgerMenu size={30}/>
-          </button>
+            <button className={styles.toggleBtn} onClick={toggleSidebar}>
+              <RxHamburgerMenu size={30} />
+            </button>
             {categories.map((item) => (
-              <button onClick={() => setSelectedCategory(item.title)} className={styles.categoriesBtn} key={item.id}>
+              <button
+                onClick={() => setSelectedCategory(item.title)}
+                className={styles.categoriesBtn}
+                key={item.id}
+              >
                 {item.icon}
                 {openSidebar ? <span>{item.title}</span> : null}
               </button>
             ))}
           </aside>
-          <div className={styles.home__content}>
-            {selectedCategory === "USA" && <Usa/>}
-            {selectedCategory === "Turkey" && <Turkey/>}
-            {selectedCategory === "Japan" && <Japan/>}
-            {selectedCategory === "South Korea" && <Korea/>}
-            {selectedCategory === "Europe" && <Europe/>}
-            {selectedCategory === "China" && <China/>}
+          <div
+            style={{ width: openSidebar ? "90%" : "100%", marginLeft: openSidebar ? "200px" : "70px"}}
+            className={styles.home__content}
+          >
+            {selectedCategory === "USA" && <Card brandArray={UsaArray} />}
+            {selectedCategory === "Turkey" && <Card brandArray={TurkeyArray} />}
+            {selectedCategory === "Japan" && <Card brandArray={JapanArray} />}
+            {selectedCategory === "Korea" && <Card brandArray={KoreaArray} />}
+            {selectedCategory === "Europe" && <Card brandArray={EuropeArray} />}
+            {selectedCategory === "China" && <Card brandArray={ChinaArray} />}
           </div>
         </div>
       </section>
