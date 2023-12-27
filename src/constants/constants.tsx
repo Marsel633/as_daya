@@ -106,11 +106,6 @@ export const categories: Categories[] = [
     title: "China",
     icon: "🇨🇳",
   },
-  {
-    id: 6,
-    title: "Korea",
-    icon: "🇰🇷",
-  },
 ];
 
 export const UsaArray: Brands[] = [
@@ -361,24 +356,6 @@ export const ChinaArray: Brands[] = [
   {
     title: "PingDuoDuo",
     url: "https://m.pinduoduo.com/home/3c.html",
-  },
-];
-export const KoreaArray: Brands[] = [
-  {
-    title: "",
-    url: "",
-  },
-  {
-    title: "",
-    url: "",
-  },
-  {
-    title: "",
-    url: "",
-  },
-  {
-    title: "",
-    url: "",
   },
 ];
 export const JapanArray: Brands[] = [

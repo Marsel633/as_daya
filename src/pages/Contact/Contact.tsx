@@ -1,5 +1,5 @@
 import { Steps } from "antd";
-import { Layout } from "../../components";
+import { Footer, Layout } from "../../components";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import { howToOrderMessages } from "../../constants";
@@ -39,6 +39,7 @@ export const Contact = () => {
               </Link>
             </div>
           </div>
+          <Footer/>
       </section>
     </Layout>
   );
