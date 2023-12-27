@@ -22,11 +22,11 @@ body {
     padding: 10px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (max-width: 768px) {
     padding: 15px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     padding: 20px;
   }
 }
@@ -76,12 +76,12 @@ img {
       text-align: center;
       color: #fff;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 430px) {
       height: 40px;
       font-size: 16px;
     }
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 430px) {
     grid-template-columns: 1fr;
   }
   @media screen and (max-width: 576px) {

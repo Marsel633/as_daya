@@ -58,6 +58,9 @@ $primary: #9c74a0;
         .home__content {
             margin-top: 3rem;
             transition: .4s all;
+            @media screen and (max-width: 430px) {
+                margin-top: 1rem;
+            }
         }
     }
 }

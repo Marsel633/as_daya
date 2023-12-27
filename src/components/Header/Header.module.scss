@@ -55,17 +55,17 @@ $primary: #9c74a0;
         }
       }
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 430px) {
        font-size: 1rem;
       }
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 430px) {
       width: 100%;
       flex-direction: column;
       justify-content: space-around;
     }
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
     flex-direction: column;
   }
