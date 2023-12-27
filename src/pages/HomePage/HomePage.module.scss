@@ -41,10 +41,16 @@ $primary: #9c74a0;
                 border-radius: 5px;
                 .categories__icon {
                     font-size: 3.2rem;
+                    @media screen and (max-width: 430px) {
+                        font-size: 1.5rem;
+                    }
                 }
                 &:focus {
                     background-color: $primary;
                     color: #fff;
+                }
+                @media screen and (max-width: 430px) {
+                    font-size: 1rem;
                 }
             }
             .toggleBtn {
@@ -52,7 +58,6 @@ $primary: #9c74a0;
                 height: 50px;
                 background-color: transparent;
                 border: none;
-                margin-left: 20px;
             }
         }
         .home__content {
@@ -62,10 +67,27 @@ $primary: #9c74a0;
                 margin-top: 1rem;
             }
         }
+        .fullWidth {
+            width: 100%;
+            margin-left: 100px;
+            @media screen and (max-width: 430px) {
+                margin-left: 60px;
+            }
+        }
+        .hiddenWidth {
+            width: 90%;
+            margin-left: 200px;
+            @media screen and (max-width: 430px) {
+                margin-left: 110px;
+            }
+        }
     }
 }
 .activeMenu {
     width: 180px;
+    @media screen and (max-width: 430px) {
+        width: 130px;
+    }
   }
 
   .inactiveMenu {

@@ -20,6 +20,7 @@ export const HomePage = () => {
   };
 
   const sidebarWidth = openSidebar ? "activeMenu" : "inactiveMenu";
+  const contentWidth = openSidebar ? "hiddenWidth" : "fullWidth";
   console.log(UsaArray);
   return (
     <Layout>
@@ -41,8 +42,7 @@ export const HomePage = () => {
             ))}
           </aside>
           <div
-            style={{ width: openSidebar ? "90%" : "100%", marginLeft: openSidebar ? "200px" : "100px"}}
-            className={styles.home__content}
+            className={`${styles.home__content} ${styles[contentWidth]}`}
           >
             {selectedCategory === "USA" && <Card brandArray={UsaArray} />}
             {selectedCategory === "Turkey" && <Card brandArray={TurkeyArray} />}

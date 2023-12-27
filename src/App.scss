@@ -11,6 +11,10 @@ body {
   font-family: Montserrat;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
