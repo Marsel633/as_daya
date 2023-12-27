@@ -8,7 +8,7 @@ export const About = () => {
     <Layout>
         <section className={styles.about}>
           <div className="container center">
-              <h1>Привет 🖐, давай знакомиться! Меня зовут <span>Даяна</span></h1>
+              <h1>Я - <span>Даяна</span>, ваш семейный байер.</h1>
               <div className={styles.about__myImage}><div className={styles.about__myImage_back}></div><img src={myImg} alt="my photo" /></div>
               <div className={styles.about__content}>
                 {aboutMeArray.map(text => (

@@ -35,13 +35,13 @@ export const HomePage = () => {
                 className={styles.categoriesBtn}
                 key={item.id}
               >
-                {item.icon}
+               <span className={styles.categories__icon}>{item.icon}</span>
                 {openSidebar ? <span>{item.title}</span> : null}
               </button>
             ))}
           </aside>
           <div
-            style={{ width: openSidebar ? "90%" : "100%", marginLeft: openSidebar ? "200px" : "70px"}}
+            style={{ width: openSidebar ? "90%" : "100%", marginLeft: openSidebar ? "200px" : "100px"}}
             className={styles.home__content}
           >
             {selectedCategory === "USA" && <Card brandArray={UsaArray} />}

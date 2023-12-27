@@ -10,7 +10,7 @@ $primary: #9c74a0;
         }
         .sidebar {
             position: absolute;
-            left: 20px;
+            left: 10px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -32,13 +32,16 @@ $primary: #9c74a0;
                 justify-content: start;
                 align-items: center;
                 gap: 15px;
-                padding: 0 20px;
+                padding: 0 15px;
                 background-color: transparent;
                 border: none;
                 transition: .3s all;
                 font-weight: bold;
                 font-size: 1.5rem;
                 border-radius: 5px;
+                .categories__icon {
+                    font-size: 3.2rem;
+                }
                 &:focus {
                     background-color: $primary;
                     color: #fff;

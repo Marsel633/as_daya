@@ -3,39 +3,42 @@ import { Layout } from "../../components";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import { howToOrderMessages } from "../../constants";
+import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Contact = () => {
-    const [current, setCurrent] = useState<number>(0)
-const onChange = (value:number) => {
+  const [current, setCurrent] = useState<number>(0);
+  const onChange = (value: number) => {
     setCurrent(value);
-}
+  };
   return (
     <Layout>
-      <section className={styles.contact}>
-        <div className="container center">
-          <h1>Контакты</h1>
-         <div className={styles.contact__content}>
-              <div className={styles.contact__howToOrder}>
-                <Steps
-                  current={current}
-                  onChange={onChange}
-                  direction="vertical"
-                  items={howToOrderMessages}
-                />
-              </div>
-              <div className={styles.contact__socials}>
-                <div className={styles.socials__whatsapp}>
-                    Напишите мне на <span>WhatsApp</span>
-                </div>
-                <div className={styles.socials__whatsapp}>
-                    Напишите мне в <span>Instagram</span>
-                </div>
-                <div className={styles.socials__whatsapp}>
-                    Напишите мне на <span>WhatsApp</span>
-                </div>
-              </div>
-         </div>
-        </div>
+      <section className={`${styles.contact} container center`}>
+          <div className={styles.contact__content}>
+            <div className={styles.contact__howToOrder}>
+              <h3>Как заказать?</h3>
+              <Steps
+                current={current}
+                onChange={onChange}
+                direction="vertical"
+                items={howToOrderMessages}
+              />
+            </div>
+            <div className={`${styles.contact__socials} center`}>
+              <Link to={('https://api.whatsapp.com/send/?phone=996508077727&text&type=phone_number&app_absent=0')} target="_blank" className={styles.socials__whatsapp}>
+                <FaWhatsapp />
+                <span>WhatsApp</span>
+              </Link>
+              <Link to={('https://www.instagram.com/as__daya/')} target="_blank" className={styles.socials__instagram}>
+                <FaInstagram />
+                <span>Instagram</span>
+              </Link>
+              <Link to={('https://t.me/daiana94')} target="_blank" className={styles.socials__telegram}>
+                <FaTelegram />
+                <span>Telegram</span>
+              </Link>
+            </div>
+          </div>
       </section>
     </Layout>
   );

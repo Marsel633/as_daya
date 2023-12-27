@@ -5,6 +5,9 @@ $primary: #9c74a0;
     h1 {
         margin-top: 4rem;
         text-align: center;
+        @media screen and (max-width: 320px) {
+            margin-top: 2rem;
+        }
     }
     .about__myImage {
         margin: 40px;
@@ -28,13 +31,28 @@ $primary: #9c74a0;
             background-color: $primary;
             z-index: 1;
             box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+            @media screen and (max-width: 320px){
+                width: 200px;
+                height: 200px;
+            }
+        }
+        @media screen and (max-width: 320px){
+            width: 200px;
+            height: 200px;
+            margin: 10px;
         }
     }
     .about__content {
-        width: 40%;
+        width: 100%;
+        margin-top: 3rem;
         p {
+            width: 80%;
+            float: right;
             font-size: 1.2rem;
             line-height: 2rem;
+            @media screen and (max-width: 320px) {
+                width: 100%;
+            }
         }
     }
 }
