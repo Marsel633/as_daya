@@ -31,21 +31,11 @@ export type Brands = {
 };
 
 export const aboutMeArray: string[] = [
-  "⚫️ Меня зовут Даяна",
-  "⚫️ Мне 22 года",
-  "⚫️ Замужем 💍",
-  "⚫️ Готовлюсь стать мамой 🤰🏻",
-  "⚫️ Есть высшее образование. Специальность - юриспруденция 👩🏻‍🎓",
-  "⚫️ Всегда стараюсь обучаться чему то новому, посещала многие тренинги и курсы👩🏻‍💻. (И до сих пор обучаюсь 😂)",
-  "1. Наращивание ресниц",
-  "2. Мастер ногтевого сервиса",
-  "3. Стилист",
-  "4. SMM - специалист, сертифицированный таргетолог и мобилограф",
-  "⚫️ Но остановилась на байерстве. Помогаю людям выкупать любимые бренды по вкусным ценам ✅",
-  "⚫️ Недавно взяла новое обучение, чтобы выкупать товар с Европы.",
-  "⚫️ Теперь могу заказывать товары не только с Турции, США, Китая, но и Италия, Испания, Португалия, Франция, Германия, Польша, Великобритания, Япония, Корея. 🔝",
-  "⚫️ Опыт в сфере байерства - более года",
-  "⚫️ Так же очень люблю животных, особенно собак и лошадей 🤍",
+  "Я ваш семейный байер.",
+  "- Знаю всё о брендовых товарах от масс-маркета до тяжелого люкса ",
+  "- Выкупаю товар с таких стран, как США, Турция, Япония и Китай ",
+  "- Вышла на новый уровень по выкупу товара, теперь радую Вас заказами с Европы",
+  "- Выкупила более 5000 тысяч товаров за 2023 год",
 ];
 
 export const howToOrderMessages: HowToOrder[] = [
@@ -119,17 +109,57 @@ export const categories: Categories[] = [
   },
   {
     id: 5,
-    title: "Korea",
-    icon: <span style={{ fontSize: "3.2rem" }}>🇰🇷</span>,
+    title: "China",
+    icon: <span style={{ fontSize: "3.2rem" }}>🇨🇳</span>,
   },
   {
     id: 6,
-    title: "China",
-    icon: <span style={{ fontSize: "3.2rem" }}>🇨🇳</span>,
+    title: "Korea",
+    icon: <span style={{ fontSize: "3.2rem" }}>🇰🇷</span>,
   },
 ];
 
 export const UsaArray: Brands[] = [
+  {
+    title: "Puma",
+    url: "https://us.puma.com/us/en",
+  },
+  {
+    title: "Lacoste",
+    url: "https://www.lacoste.com/gb/",
+  },
+  {
+    title: "Nike",
+    url: "https://www.nike.com/",
+  },
+  {
+    title: "Michael Kors",
+    url: "https://www.michaelkors.com/",
+  },
+  {
+    title: "Calvin Klein",
+    url: "https://www.calvinklein.us/en",
+  },
+  {
+    title: "Zara",
+    url: "https://www.zara.com/tr/en/woman-beachwear-l1052.html?v1=2253149",
+  },
+  {
+    title: "NewBalance",
+    url: "https://www.newbalance.com/",
+  },
+  {
+    title: "H&M",
+    url: "https://www2.hm.com/en_us/index.html",
+  },
+  {
+    title: "Tommy Helfiger",
+    url: "https://usa.tommy.com/en",
+  },
+  {
+    title: "Victoria's Secret",
+    url: "https://www.victoriassecret.com/us/",
+  },
   {
     title: "Levi's",
     url: "https://www.levi.com/US/en_US/",
@@ -171,48 +201,12 @@ export const UsaArray: Brands[] = [
     url: "https://www.ralphlauren.com/?_gl=1*1codiib*_ga*NDg2MjkwODkzLjE3MDM1MDkyMzU.*_ga_JWJC3HP9M9*MTcwMzUwOTIzNC4xLjEuMTcwMzUwOTI1MC40Ni4wLjA.",
   },
   {
-    title: "H&M",
-    url: "https://www2.hm.com/en_us/index.html",
-  },
-  {
-    title: "Calvin Klein",
-    url: "https://www.calvinklein.us/en",
-  },
-  {
-    title: "Zara",
-    url: "https://www.zara.com/tr/en/woman-beachwear-l1052.html?v1=2253149",
-  },
-  {
-    title: "NewBalance",
-    url: "https://www.newbalance.com/",
-  },
-  {
     title: "Gap",
     url: "https://www.gap.com/",
   },
   {
     title: "Old Navy",
     url: "https://oldnavy.gap.com/",
-  },
-  {
-    title: "Puma",
-    url: "https://us.puma.com/us/en",
-  },
-  {
-    title: "Lacoste",
-    url: "https://www.lacoste.com/gb/",
-  },
-  {
-    title: "Nike",
-    url: "https://www.nike.com/",
-  },
-  {
-    title: "Michael Kors",
-    url: "https://www.michaelkors.com/",
-  },
-  {
-    title: "Victoria's Secret",
-    url: "https://www.victoriassecret.com/us/",
   },
   {
     title: "Crocs",
@@ -230,19 +224,51 @@ export const UsaArray: Brands[] = [
     title: "Geox",
     url: "https://www.geox.com/int/",
   },
-  {
-    title: "Tommy Helfiger",
-    url: "https://usa.tommy.com/en",
-  },
 ];
 export const EuropeArray: Brands[] = [
   {
-    title: "LuisaViaRoma",
-    url: "https://www.luisaviaroma.com",
-  },
-  {
     title: "Farfetch",
     url: "https://www.farfetch.com",
+  },
+  {
+    title: "Versace",
+    url: "https://www.versace.com",
+  },
+  {
+    title: "Prada",
+    url: "https://www.prada.com",
+  },
+  {
+    title: "Gucci",
+    url: "https://www.gucci.com/it/",
+  },
+  {
+    title: "Bershka",
+    url: "https://www.bershka.com",
+  },
+  {
+    title: "Intimissimi",
+    url: "https://www.intimissimi.com",
+  },
+  {
+    title: "Terranova",
+    url: "https://www.terranovastyle.com",
+  },
+  {
+    title: "Loro Piana",
+    url: "https://it.loropiana.com/en/",
+  },
+  {
+    title: "H&M Italy",
+    url: "https://www2.hm.com/it_it",
+  },
+  {
+    title: "ASOS Italy",
+    url: " https://www.asos.com/it/",
+  },
+  {
+    title: "LuisaViaRoma",
+    url: "https://www.luisaviaroma.com",
   },
   {
     title: "Net-A-Porter",
@@ -285,22 +311,6 @@ export const EuropeArray: Brands[] = [
     url: "https://it.maxmara.com",
   },
   {
-    title: "Intimissimi",
-    url: "https://www.intimissimi.com",
-  },
-  {
-    title: "Prada",
-    url: "https://www.prada.com",
-  },
-  {
-    title: "Versace",
-    url: "https://www.versace.com",
-  },
-  {
-    title: "Bershka",
-    url: "https://www.bershka.com",
-  },
-  {
     title: "Benetton",
     url: "https://www.benetton.com",
   },
@@ -309,28 +319,12 @@ export const EuropeArray: Brands[] = [
     url: "https://www.motivi.com",
   },
   {
-    title: "Terranova",
-    url: "https://www.terranovastyle.com",
-  },
-  {
     title: "Sephora Italy",
     url: "https://www.sephora.it",
   },
   {
-    title: "H&M Italy",
-    url: "https://www2.hm.com/it_it",
-  },
-  {
-    title: "ASOS Italy",
-    url: " https://www.asos.com/it/",
-  },
-  {
     title: "PINKO",
     url: "https://www.pinko.com/it",
-  },
-  {
-    title: "Gucci",
-    url: "https://www.gucci.com/it/",
   },
   {
     title: "Bata Italy",
@@ -345,22 +339,21 @@ export const EuropeArray: Brands[] = [
     url: "https://www.missoni.com/it",
   },
   {
-    title: "",
-    url: "",
+    title: "Kiton",
+    url: "https://it.kiton.com/",
   },
   {
-    title: "",
-    url: "",
+    title: "Harmont&Blaine",
+    url: "https://www.harmontblaine.com/us/en/",
   },
   {
-    title: "",
-    url: "",
+    title: "Premiata",
+    url: "https://premiata.it/",
   },
   {
-    title: "",
-    url: "",
+    title: "Zegna",
+    url: "https://www.zegna.com/it-en/",
   },
-
 ];
 export const ChinaArray: Brands[] = [
   {
@@ -396,6 +389,14 @@ export const KoreaArray: Brands[] = [
 ];
 export const JapanArray: Brands[] = [
   {
+    title: "Nike",
+    url: "https://www.nike.com/jp/",
+  },
+  {
+    title: "Mizuno",
+    url: "https://jpn.mizuno.com/",
+  },
+  {
     title: "Uniqlo",
     url: "https://www.uniqlo.com/jp/ja/",
   },
@@ -414,10 +415,6 @@ export const JapanArray: Brands[] = [
   {
     title: "Ingni",
     url: "https://www.ingni-store.com/smart/",
-  },
-  {
-    title: "Mizuno",
-    url: "https://jpn.mizuno.com/",
   },
   {
     title: "Zozo",
@@ -446,10 +443,6 @@ export const JapanArray: Brands[] = [
   {
     title: "Zoff",
     url: "https://www.zoff.co.jp/shop/default/.aspx",
-  },
-  {
-    title: "Nike",
-    url: "https://www.nike.com/jp/",
   },
   {
     title: "Desente",

@@ -1,3 +1,5 @@
+$primary: #9c74a0;
+
 .home {
     .home__wrapper {
         display: flex;
@@ -38,7 +40,7 @@
                 font-size: 1.5rem;
                 border-radius: 5px;
                 &:focus {
-                    background-color: #644dce;
+                    background-color: $primary;
                     color: #fff;
                 }
             }
