@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Header } from "..";
+import { Footer, Header } from "..";
 
 type Layout = {
   children: React.ReactNode;
@@ -9,6 +9,7 @@ export const Layout :React.FC<Layout> = memo(({ children }) => {
     <>
       <Header />
       {children}
+      <Footer/>
     </>
   );
 });

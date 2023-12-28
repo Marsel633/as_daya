@@ -54,15 +54,22 @@ $primary: #9c74a0;
           background-color: $primary;
         }
       }
-
-      @media screen and (max-width: 430px) {
-       font-size: 1rem;
-      }
+      @media screen and (max-width: 992px) {
+        font-size: 1.2rem;
+       }
+       @media screen and (max-width: 430px) {
+        font-size: 1rem;
+       }
+    }
+    @media screen and (max-width: 992px) {
+      width: 60%;
+     }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: space-around;
     }
     @media screen and (max-width: 430px) {
-      width: 100%;
       flex-direction: column;
-      justify-content: space-around;
     }
   }
   @media screen and (max-width: 430px) {

@@ -36,7 +36,7 @@ export const HomePage = () => {
         <div className={`${styles.home__wrapper} container`}>
           <aside className={`${styles.sidebar} ${styles[sidebarWidth]}`}>
             <button className={styles.toggleBtn} onClick={toggleSidebar}>
-              <RxHamburgerMenu size={30} />
+              <RxHamburgerMenu size="100%"/>
             </button>
             {categories.map((item) => (
               <button
@@ -60,13 +60,13 @@ export const HomePage = () => {
                 onOk={handleOk}
                 onCancel={handleCancel}
               >
-                <p>1. Если у вас при входе на сайт выходит ошибка, вам нужно скачать VPN. (Установите любое приложение VPN, такое как <Link to={'https://www.wirevpn.app/ru'} target="_blank">Wirevpn</Link> и включите его.)</p>
+                <p>1. Если у вас при входе на сайт выходит ошибка, вам нужно скачать VPN. (Установите любое приложение VPN, такое как <Link style={{color: "#1890ff"}} to={'https://www.wirevpn.app/ru'} target="_blank">Wirevpn</Link> и включите его.)</p>
                 <p>Если у вас уже есть VPN на смартфоне, активируйте его.</p>
                 <p>2. Выберите желаемую ссылку:</p>
                 <p>Кликните на интересующую вас ссылку для перехода на соответствующий сайт.</p>
                 <p>3. Примечание о VPN:</p>
                 <p>Убедитесь, что VPN подключен и работает стабильно перед переходом.</p>
-                <p>4. 4. Будьте внимательны:</p>
+                <p>4. Будьте внимательны:</p>
                 <p>Некоторые сайты могут требовать дополнительных настроек или регистрации.</p>
                 <p>5. Завершение использования:</p>
                 <p>После завершения посещения сайта, выключите VPN для экономии ресурсов.</p>

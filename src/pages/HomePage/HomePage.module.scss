@@ -1,97 +1,147 @@
 $primary: #9c74a0;
 
 .home {
-    .home__wrapper {
-        display: flex;
-        .logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 100px;
-        }
-        .sidebar {
-            position: absolute;
-            left: 10px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            transition: .5s all;
-            .link {
-                text-decoration: none;
-                color: #000;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                gap: 15px;
-                margin-bottom: 3rem;
-            }
-            .categoriesBtn {
-                height: 60px;
-                width: 100%;
-                margin: 5px 0;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                gap: 15px;
-                padding: 0 15px;
-                background-color: transparent;
-                border: none;
-                transition: .3s all;
-                font-weight: bold;
-                font-size: 1.5rem;
-                border-radius: 5px;
-                .categories__icon {
-                    font-size: 3.2rem;
-                    @media screen and (max-width: 430px) {
-                        font-size: 1.5rem;
-                    }
-                }
-                &:focus {
-                    background-color: $primary;
-                    color: #fff;
-                }
-                @media screen and (max-width: 430px) {
-                    font-size: 1rem;
-                    height: 35px;
-                    width: 66%;
-                }
-            }
-            .toggleBtn {
-                width: 50px;
-                height: 50px;
-                background-color: transparent;
-                border: none;
-            }
-        }
-        .home__content {
-            margin-top: 3rem;
-            transition: .4s all;
-            @media screen and (max-width: 430px) {
-                margin-top: 1rem;
-            }
-        }
-        .fullWidth {
-            width: 100%;
-            margin-left: 100px;
-            @media screen and (max-width: 430px) {
-                margin-left: 60px;
-            }
-        }
-        .hiddenWidth {
-            width: 90%;
-            margin-left: 200px;
-            @media screen and (max-width: 430px) {
-                margin-left: 110px;
-            }
-        }
+  .home__wrapper {
+    display: flex;
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
     }
+    .sidebar {
+      position: absolute;
+      left: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: 0.5s all;
+      .link {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 3rem;
+      }
+      .categoriesBtn {
+        height: 60px;
+        width: 100%;
+        margin: 5px 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+        padding: 0 15px;
+        background-color: transparent;
+        border: none;
+        transition: 0.3s all;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        color: #000000;
+        .categories__icon {
+          font-size: 3.2rem;
+          @media screen and (max-width: 992px) {
+            font-size: 2.5rem;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 2rem;
+          }
+          @media screen and (max-width: 430px) {
+            font-size: 1.5rem;
+          }
+        }
+        &:focus {
+          background-color: $primary;
+          color: #fff;
+        }
+        @media screen and (max-width: 992px) {
+          font-size: 1.2rem;
+          width: 85%;
+        }
+        @media screen and (max-width: 768px) {
+          height: 45px;
+        }
+        @media screen and (max-width: 430px) {
+          font-size: 1rem;
+          height: 35px;
+          width: 66%;
+        }
+      }
+      .toggleBtn {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: #000000;
+        margin-left: 10px;
+        span {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        @media screen and (max-width: 992px) {
+          width: 40px;
+          height: 40px;
+        }
+        @media screen and (max-width: 430px) {
+          width: 30px;
+          height: 40px;
+        }
+      }
+    }
+    .home__content {
+      margin-top: 3rem;
+      transition: 0.4s all;
+      @media screen and (max-width: 992px) {
+        margin-top: 2rem;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 1.5rem;
+      }
+      @media screen and (max-width: 430px) {
+        margin-top: 1rem;
+      }
+    }
+    .fullWidth {
+      width: 100%;
+      margin-left: 100px;
+      @media screen and (max-width: 992px) {
+        margin-left: 80px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 70px;
+      }
+      @media screen and (max-width: 430px) {
+        margin-left: 60px;
+      }
+    }
+    .hiddenWidth {
+      width: 90%;
+      margin-left: 200px;
+      @media screen and (max-width: 992px) {
+        margin-left: 160px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 150px;
+      }
+      @media screen and (max-width: 430px) {
+        margin-left: 110px;
+      }
+    }
+  }
 }
 .activeMenu {
-    width: 180px;
-    @media screen and (max-width: 430px) {
-        width: 130px;
-    }
+  width: 180px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
   }
+  @media screen and (max-width: 430px) {
+    width: 130px;
+  }
+}
 
-  .inactiveMenu {
-    width: calc(3.2rem + 30px);
-  }
+.inactiveMenu {
+  width: calc(3.2rem + 30px);
+}
